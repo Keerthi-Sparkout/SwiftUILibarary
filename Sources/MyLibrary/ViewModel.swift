@@ -9,12 +9,12 @@ import Foundation
 import Combine
 import Alamofire
 
-struct User {
-    var firsName: String
+public struct User {
+    public var firsName: String
 }
 
-protocol ApiProtocol {
-    func fetchData(url: String) -> AnyPublisher<User, AFError>
+public protocol ApiProtocol {
+    public func fetchData(url: String) -> AnyPublisher<User, AFError>
 }
 
 class NetworkService: ApiProtocol {
